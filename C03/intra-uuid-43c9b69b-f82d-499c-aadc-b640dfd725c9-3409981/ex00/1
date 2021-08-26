@@ -1,0 +1,16 @@
+#include <string.h>
+#include <stdio.h>
+int		ft_strcmp(char *si, char *s2);
+
+int		main(void)
+{
+	char s1[] = "00";
+	char s2[] = "0222";
+	int  i;
+
+	i = strcmp(s1, s2);
+	printf("%d", i);
+	i = ft_strcmp(s1, s2);
+	printf("%d", i);
+}
+

@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+unsigned int		ft_strlcpy(char *dest, char *src, unsigned int size)
+{
+	unsigned int	i;
+	int				j;
+
+	j = 0;
+	i = 0;
+	printf("%d", size);
+	if (size >  0)
+	{
+		while (i < size)
+		{
+			dest[i] = src[i];
+			i++;
+		}
+	}
+	else
+		return (0);
+	while (src[j] != '\0')
+		j++;
+	dest[i] = '\0';
+	return (j);
+}

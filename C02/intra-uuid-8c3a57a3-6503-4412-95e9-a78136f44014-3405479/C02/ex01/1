@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+char	*ft_strncpy(char *dest, char *src, unsigned int n);
+
+int		main(void)
+{
+	char 			dest[] = "tremenda tula bro";
+	char 			src[] = "soy aladin"; 
+	char			*popo;
+	unsigned int 	n;
+
+	n = 6;
+	popo = strncpy(dest, src, n);
+	printf("%s", dest);
+	popo = ft_strncpy(dest, src, n);
+	printf("%s", dest);
+	return (0);
+}

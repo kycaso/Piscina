@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <string.h>
+
+char	*ft_strstr(char *str, char *to_find);
+int	main(void)
+{
+	char str[] = "bla ble bli";
+	char *to_find = "al";
+	char *papu;
+
+	papu = strstr(str, to_find);
+	printf("%s \n", papu);
+	printf("'\0'");
+}
